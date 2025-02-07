@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#generator">Generator</a></li>
+      <li><a href="#palettes">Palettes</a></li>
+    </ul>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <!-- Section 1: Color Generator -->
+  <section id="generator">
+    <h1>Color Palette Generator</h1>
+    <button id="generate-btn">Generate Palette</button>
+    <div id="color-palette"></div>
+  </section>
+
+  <!-- Section 2: Display HEX Codes -->
+  <section id="palettes">
+    <h2>Generated Palettes</h2>
+    <div id="hex-codes"></div>
+  </section>
+
+  <!-- Section 3: Saved Palettes -->
+  <section id="saved-palettes">
+    <h2>Saved Palettes</h2>
+    <div id="saved-colors"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
