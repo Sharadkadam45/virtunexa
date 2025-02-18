@@ -1,0 +1,118 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  color: #333;
+  background: linear-gradient(to right, #f1f3f4, #e0e6eb);
+}
+
+.navbar {
+  background: linear-gradient(to right, #3a7bd5, #3a6db2); /* More modern color combination */
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start; /* Align navbar items to the left */
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.8rem 2rem; /* Added more horizontal padding */
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+  margin-right: 15px; /* Adds more space between navbar items */
+}
+
+.navbar a:last-child {
+  margin-right: 0; /* Removes margin from the last item */
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #3a7bd5; /* Lighten the hover color */
+}
+
+.navbar .login-icon {
+  font-size: 1.8rem; /* Slightly bigger icon */
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 20px; /* Spacing between the icon and other navbar elements */
+}
+
+.navbar .login-icon:hover {
+  color: #99f2c8;
+}
+
+section {
+  padding: 12rem 3rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#section1 {
+  background: url('architecture-bg1.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 12rem 3rem;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+#section2 {
+  background: url('architecture-bg2.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 12rem 3rem;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ul li, ol li {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+  backdrop-filter: blur(10px);
+}
+
+ul li:hover, ol li:hover {
+  transform: scale(1.1);
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 3rem;
+  color: #ffeb3b;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+      display: block;
+      text-align: center;
+      margin: 0.8rem 0;
+      padding: 1rem; /* Reduced padding for smaller screens */
+  }
+  section {
+      padding: 6rem 1.5rem;
+  }
+  #section1, #section2 {
+      padding: 8rem 1.5rem;
+  }
+}
